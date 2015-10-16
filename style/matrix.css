@@ -1,0 +1,46 @@
+/*
+ *
+ *	Author: Ritesh Kukreja
+ *	Follow the Post at riteshkukreja.wordpress.com
+ *	Title: Matrix Loading Screen
+ */
+
+@font-face {
+	font-family: matrix;
+	src: url(../assests/matrix.ttf);
+}
+
+#loader {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	z-index:20;
+	background-color: #111;
+	overflow: hidden;
+}
+
+.thread {
+	width: 1px;
+	word-wrap:break-word;
+	word-break:break-all;
+	height: auto;
+
+	position:absolute;
+	top: -2000px;
+
+	font-family: matrix;
+	font-size: 12px;
+	color: #1ec503;
+
+	text-shadow: 0 0 40px #EEE;
+
+	-webkit-transition: all .4s;
+}
+
+.thread:first-letter, .light {
+	color: #FFF;
+	text-shadow: 0 0 40px #CCC;
+}
